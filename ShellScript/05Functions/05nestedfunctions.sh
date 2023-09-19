@@ -7,4 +7,6 @@ function_one() {
 function_two() {
         echo "Hello Devops!"
 }
+
+# invoke function
 function_one

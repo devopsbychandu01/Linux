@@ -1,3 +1,6 @@
 #!/bin/sh
-echo "hello world"
-echo "Hello India"
+
+word="hello india"
+
+echo $word
+
