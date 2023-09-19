@@ -1,0 +1,7 @@
+$0="name of the script"
+$1..9="argument variables"
+$#="no. of arguments supplied to a script"
+$*="written all arguments that are double couted"
+$@="this will give the arguments that are individually double couted"
+$?="This will shows the exit status of the final command wee executed"
+$$="pid of the current shell of the script"
