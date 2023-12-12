@@ -2,11 +2,11 @@
 df -Th
 lsblk
 fdisk -l
-fdisk /dev/sdc -l
-fdisk /dev/sdc
+fdisk /dev/sdd -l
+fdisk /dev/sdd
 lsblk
 # change the partition type
-fdisk /dev/sdc
+fdisk /dev/sdd
 pvs
 pvcreate <partition>
 pvs

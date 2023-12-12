@@ -7,7 +7,7 @@ echo $PATH
 env
 # Use export command to change the path variables.
 # If you want your directory should present first, then use following command.
-export PATH=/the/file/path:$PATH
+export PATH=/opt/maven3/bin:$PATH
 # If you want your directory should present last, then use following command.
 export PATH=$PATH:/the/file/path
 # add multiple directories to path variable

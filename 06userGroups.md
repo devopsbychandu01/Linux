@@ -17,7 +17,7 @@ usermod -U test_user
 ## when ever a user created by default a also will create with same name of user.
 groups azure
 # create new group
-groupadd azuredevops
+groupadd azuredevops1
 # if you want to updated created group to a existing user
-usermod -a -G azuredevops azure
+usermod -a -G azuredevops1 azure
 

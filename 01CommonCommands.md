@@ -45,9 +45,9 @@ touch file1 file2 file3
 
 
 ### cp ###
-cp file directory/
-cp file1 file2 file3 file4 directory/
-cp file file1
+cp file directory1/
+cp file1 file2 file3 file4 directory2/
+cp file file5
 # recursively copy files on the directory
 cp -R directory1/ directory2/
 
@@ -55,14 +55,14 @@ cp -R directory1/ directory2/
 
 ### mv ###
 mv file file1
-mv file directory/
+mv file2 directory1/
 mv file1 file2 file3 directory/
-mv directory1/ directory2/
+mv directory3/ directory2/
 
 
 ### RM ###
 rm file1
-rm -f file1
+rm -f file5
 # interractive remove. This will tell we are removing the empty file or regular file
 rm -i file1
 # remove all files
@@ -78,7 +78,7 @@ cat file1 file2
 # cat a file with numbers
 cat -n file1
 # create new file
-cat > file1
+cat > file3
 # copy data from one file to another
 cat file1 > file2
 
@@ -115,9 +115,13 @@ head -c 20 file1
 
 ### Zip/unzip ###
 zip myfile.zip file1 file2  
-zip -r filename.zip directory_name  
+mkdir directoty
+cd directoty
+touch file1 file2
+cd ..
+zip -r filename.zip directoty/
 unzip file.zip
-unzip file.zip -d directory/
+unzip file.zip -d directoty/
 
 
 ### echo ### 
@@ -173,7 +177,7 @@ bye
 
 
 ### alias ###
-alias name=ls
+alias name=ll
 unalias name
 alias word="echo hello world"
 word 
@@ -235,7 +239,7 @@ history 5
 !1912
 history | grep ls
 # remove history
-history -d 1996 
+history -d 98 
 history | tail
 
 
@@ -257,7 +261,7 @@ wget http://www.example.com/filename.txt -o /path/filename.txt
 # resume partially downloaded file
 wget -c http://example.com/samplefile.tar.gz
 # try to download file for some no.of times
-wget --tries=10 http://example.com/samplefile.tar.gz
+wget --tries=3 http://example.com/samplefile.tar.gz
 
 
 
@@ -292,9 +296,9 @@ whereis cd
 
 ### find ###
 # Find Files Using Name in Current Directory
-find . -name tecmint.txt
+find . -name file
 # Find Files Under Home Directory
-find /home -name tecmint.txt
+find /opt -name file
 # Find Files Using Name and Ignoring Case
 find /home -iname tecmint.txt
 # Find Directories Using Name
