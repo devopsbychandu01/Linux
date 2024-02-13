@@ -80,7 +80,7 @@ cat -n file1
 # create new file
 cat > file3
 # copy data from one file to another
-cat file1 > file2
+cat file3 > file4
 
 
 ### less ###
@@ -110,8 +110,8 @@ head file1
 head file1 file2
 head -n 15 file1
 head -15 file1
-head -c 20 file1
 
+head -c 20 file1
 
 ### Zip/unzip ###
 zip myfile.zip file1 file2  
@@ -319,12 +319,12 @@ find /tmp -type f -empty
 find /tmp -type d -empty
 # File all Hidden Files
 find /tmp -type f -name ".*"
-# Find Last 50 Days Modified Files
+<!-- # Find Last 50 Days Modified Files
 find / -mtime 50
 # Find Last 50 Days Accessed Files
-find / -atime 50
+find / -atime 50 -->
 # find all the files which are modified more than 50 days back and less than 100 days.
-find / -mtime +50 –mtime -100
+<!-- find / -mtime +50 –mtime -100 -->
 # Find Changed Files in Last 1 Hour
 find / -cmin -60
 # Find 50MB Files

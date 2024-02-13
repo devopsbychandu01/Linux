@@ -15,4 +15,4 @@ df -Th
 ## Auto mount 
 blkid
 vi /etc/fstab
-UUID="a742bb99-4f82-41ec-993a-717dedee4433" /data1 xfs defaults 0 0
+UUID="4ce62f85-f0c0-4638-b965-ae9ea830ac33" /data1 ext4 defaults 0 0

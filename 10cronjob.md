@@ -1,4 +1,4 @@
 crontab -l
 crontab -e
 
-15 16 * * * echo "this is test" > /home/devops/sample.txt
+57 01 * * * cp /home/devops/sample.txt /home/devops/sample_bkp.txt

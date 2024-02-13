@@ -11,11 +11,11 @@ chmod 777 filename
 chmod 777 directory
 chmod 777 -R directory
 
-chmod +x file
-chmod u+x file
-chmod u-x file
-chmod g+w file
-chmod o-x file
+chmod +x file1
+chmod u+x file1
+chmod u-x file1
+chmod g+w file1
+chmod o-x file1
 
 chmod 600 file
 chmod 555 file
