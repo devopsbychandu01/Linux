@@ -119,7 +119,7 @@ mkdir directoty
 cd directoty
 touch file1 file2
 cd ..
-zip -r filename.zip directoty/
+zip -r directory.zip directoty/
 unzip file.zip
 unzip file.zip -d directoty/
 
@@ -177,8 +177,8 @@ bye
 
 
 ### alias ###
-alias name=ll
-unalias name
+alias allfiles=ll
+unalias allfiles
 alias word="echo hello world"
 word 
 unalias word
@@ -212,7 +212,7 @@ shutdown 20:00
 
 ### man/help ###
 man cat
-man makdir
+man mkdir
 man ls
 passwd -h
 passwd --help
@@ -253,11 +253,11 @@ useradd azuredevops
 
 
 ### wget ###
-wget http://example.com/sample.php
+wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.24/bin/apache-tomcat-10.1.24.tar.gz
 # -b used tp download backgrond
-wget -b http://www.example.com/samplepage.php
+wget -b wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.24/bin/apache-tomcat-10.1.24.tar.gz
 # overwrite the downloaded value on a file
-wget http://www.example.com/filename.txt -o /path/filename.txt
+wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.24/bin/apache-tomcat-10.1.24.tar.gz -o filename.gz
 # resume partially downloaded file
 wget -c http://example.com/samplefile.tar.gz
 # try to download file for some no.of times
@@ -268,7 +268,9 @@ wget --tries=3 http://example.com/samplefile.tar.gz
 ### curl ###
 curl google.com
 curl http://site.{one, two, three}.com
-curl -o hello.zip ftp://speedtest.tele2.net/1MB.zip
+
+
+curl -o hello.gz https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.24/bin/apache-tomcat-10.1.24.tar.gz
 # –limit-rate: This option limits the upper bound of the rate of data transfer and keeps it around the given value in bytes. 
 curl --limit-rate 1000K -O ftp://speedtest.tele2.net/1MB.zip
 curl -u demo:password -O ftp://test.rebex.net/readme.txt
