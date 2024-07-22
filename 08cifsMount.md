@@ -18,7 +18,7 @@ id
 # mound the network share using following command.
 mount -t cifs -o credentials=<credPath>,uid=<uid>,gid=<gid>,dir_mode=0755,file_mode=0755 //<privateIP>/<shareName> <mount point>
 
-mount -t cifs -o credentials=/etc/win-credentials,uid=0,gid=0,dir_mode=0755,file_mode=0755 //10.0.0.6/share /data10
+mount -t cifs -o credentials=/etc/win-credentials,uid=0,gid=0,dir_mode=0755,file_mode=0755 //10.0.0.5/share /data1
 
 vi /etc/fstab
 //10.0.0.5/share cifs credentials=/etc/win-credentials,file_mode=0755,dir_mode=0755,uid=0,gid=0 0 0

@@ -46,7 +46,7 @@ touch file1 file2 file3
 
 ### cp ###
 cp file directory1/
-cp file1 file2 file3 file4 directory2/
+cp file1 file2 file3  directory2/
 cp file file5
 # recursively copy files on the directory
 cp -R directory1/ directory2/
@@ -253,11 +253,11 @@ useradd azuredevops
 
 
 ### wget ###
-wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.24/bin/apache-tomcat-10.1.24.tar.gz
+wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.26/bin/apache-tomcat-10.1.26.tar.gz
 # -b used tp download backgrond
-wget -b wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.24/bin/apache-tomcat-10.1.24.tar.gz
+wget -b wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.26/bin/apache-tomcat-10.1.26.tar.gz
 # overwrite the downloaded value on a file
-wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.24/bin/apache-tomcat-10.1.24.tar.gz -o filename.gz
+wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.26/bin/apache-tomcat-10.1.26.tar.gz -o filename.gz
 # resume partially downloaded file
 wget -c http://example.com/samplefile.tar.gz
 # try to download file for some no.of times
@@ -304,9 +304,9 @@ find /opt -name file
 # Find Files Using Name and Ignoring Case
 find /home -iname tecmint.txt
 # Find Directories Using Name
-find / -type d -name Tecmint
+find /opt -type d -name test
 # Find PHP Files Using Name
-find / -type f -name tecmint.php
+find / -type f -name *.php
 # Find all PHP Files in the Directory
 find . -type f -name "*.php"
 # Find Files Based on their Permissions
@@ -316,7 +316,7 @@ find / -perm /u=r
 # Find Executable Files
 find / -perm /a=x
 # Find all Empty Files
-find /tmp -type f -empty
+find /opt -type f -empty
 # Find all Empty Directories
 find /tmp -type d -empty
 # File all Hidden Files
