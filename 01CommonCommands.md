@@ -239,7 +239,7 @@ history 5
 !1912
 history | grep ls
 # remove history
-history -d 98 
+history -d 251
 history | tail
 
 
@@ -253,11 +253,11 @@ useradd azuredevops
 
 
 ### wget ###
-wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.26/bin/apache-tomcat-10.1.26.tar.gz
+wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.30/bin/apache-tomcat-10.1.30.tar.gz
 # -b used tp download backgrond
 wget -b wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.26/bin/apache-tomcat-10.1.26.tar.gz
 # overwrite the downloaded value on a file
-wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.26/bin/apache-tomcat-10.1.26.tar.gz -o filename.gz
+wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.30/bin/apache-tomcat-10.1.30.tar.gz -o filename.gz
 # resume partially downloaded file
 wget -c http://example.com/samplefile.tar.gz
 # try to download file for some no.of times
@@ -270,7 +270,7 @@ curl google.com
 curl http://site.{one, two, three}.com
 
 
-curl -o hello.gz https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.24/bin/apache-tomcat-10.1.24.tar.gz
+curl -o hello.gz https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.30/bin/apache-tomcat-10.1.30.tar.gz
 # –limit-rate: This option limits the upper bound of the rate of data transfer and keeps it around the given value in bytes. 
 curl --limit-rate 1000K -O ftp://speedtest.tele2.net/1MB.zip
 curl -u demo:password -O ftp://test.rebex.net/readme.txt
