@@ -5,8 +5,8 @@ do
 	Q=`expr $NUM % 2`
 	if [ $Q -eq 0 ]
 	then 
-		echo "number is an even number"
+		echo "$NUM number is an even number"
 		continue
 	fi
-	echo "number is an odd number"
+	echo "$NUM number is an odd number"
 done
