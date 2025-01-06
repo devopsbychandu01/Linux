@@ -36,7 +36,7 @@ mkdir touch
 mkdir -p first/second/third
 # this also gives the verbose option
 mkdir -v geeksforgeeks
-mkdir directory1 directory2 directory3
+mkdir directory4 directory2 directory3
 
 
 ### Touch ###
