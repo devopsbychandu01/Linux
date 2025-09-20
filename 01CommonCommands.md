@@ -45,7 +45,7 @@ touch file1 file2 file3
 
 
 ### cp ###
-cp file directory1/
+cp file1 directory2/
 cp file1 file2 file3  directory2/
 cp file file5
 # recursively copy files on the directory
